@@ -38,3 +38,6 @@ WORKDIR /
 
 # this will make the virtual env Python the primary python
 ENV PATH /venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+RUN mkdir /examples
+ADD twostep.py /examples/
