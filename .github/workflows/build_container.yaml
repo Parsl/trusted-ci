@@ -25,6 +25,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        tags: trusted-ci:ci
+        tags: ghcr.io/parsl/trusted-ci:ci
         push: true
 
