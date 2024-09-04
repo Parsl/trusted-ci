@@ -1,0 +1,19 @@
+name: trusted CI container build
+
+on:
+  push
+
+jobs:
+  k8s-kind-suite:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+
+    steps:
+    - uses: actions/checkout@master
+
+    - name: Build docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        tags: trusted-ci:ci
+
