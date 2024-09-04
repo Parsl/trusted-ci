@@ -4,7 +4,7 @@ on:
   push
 
 jobs:
-  k8s-kind-suite:
+  image-for-trusted-ci:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
 
